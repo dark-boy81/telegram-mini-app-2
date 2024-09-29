@@ -14,7 +14,7 @@ app.post(`/bot${token}`, (req, res) => {
   res.sendStatus(200);
 });
 
-bot.setWebHook(`https://telegram-mini-app-drab.vercel.app/bot${token}`);
+bot.setWebHook(`https://telegram-mini-app-2.vercel.app/bot${token}`);
 
 bot.onText(/\/start/, (msg) => {
   bot.sendMessage(msg.chat.id, 'Hello! This bot tells you the time and date.');
